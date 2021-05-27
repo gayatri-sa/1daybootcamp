@@ -1,0 +1,12 @@
+<html>
+<head>
+  <title><%= @title %></title>
+</head>
+<body>
+  <h1><%= @title %><%= @node['hostname'] %></h1>
+  <h2><%= @node['company_web']['company_name'] %></h2>
+  <h3><%= @desc %></h3>
+  <h3>This node is on platform <%= @node['platform'] %></h3>
+  <h3>The total swap available <%= @node['memory']['swap']['total'] %></h3>
+</body>
+</html>

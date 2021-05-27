@@ -1,0 +1,2 @@
+---
+forexercises::ex12_hiera::filecontent: 'I am from hiera in the module common.yaml - filecontent'

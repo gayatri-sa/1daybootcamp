@@ -1,0 +1,12 @@
+<%- | String $templateVar1,
+     Optional[String] $templateVar2 = "Default value for template var2"
+| -%>
+
+I am a template var1: <%= $templateVar1 %>
+I am a template var2: <%= $templateVar2 %>
+I am a class variable: <%= $exercises::ex10_templates::classvariable %> 
+I am a fact. The OS of this machine is <%= $osfamily %>
+I am a variable defined in Site.pp <%= $siteppvariable %>
+I am from the same module, different class declared, $var1 mandatory class param: <%= $exercises::withparams::var1 %>
+I am from the same module, different class declared, $var2 optional class param: <%= $exercises::withparams::var2 %>
+I am from another module, declared, class variable $otherclassavariable: <%= $forexercises::classa::otherclassavariable %>

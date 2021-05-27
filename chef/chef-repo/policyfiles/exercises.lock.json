@@ -1,0 +1,138 @@
+{
+  "revision_id": "3861bde7c3cea4f442d53a6491b70aa62dc9c95a8183d533bb8900a1e0c23c54",
+  "name": "exercises",
+  "run_list": [
+    "recipe[exercises::ex9]",
+    "recipe[php::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "exercises": {
+      "version": "0.1.0",
+      "identifier": "21ff663a8f1ec3641d5297eb02cf0f76d56ac1b7",
+      "dotted_decimal_identifier": "9569488765656771.28179738244350671.17003061100983",
+      "source": "../cookbooks/exercises",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "0fd9b6332f26ed4ae7bcce063ffb77fd8908254c",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/exercises"
+      }
+    },
+    "ondrej_ppa_ubuntu": {
+      "version": "0.1.0",
+      "identifier": "5f6152c1ab78f23b13a4cf1325769f1aeb092955",
+      "dotted_decimal_identifier": "26847130851965170.16628622195631478.174937961212245",
+      "cache_key": "ondrej_ppa_ubuntu-0.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ondrej_ppa_ubuntu/versions/0.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ondrej_ppa_ubuntu/versions/0.1.0/download",
+        "version": "0.1.0"
+      }
+    },
+    "php": {
+      "version": "8.1.0",
+      "identifier": "7b2c8fc1c51da6751b58c40c8d5e3b76cde465c3",
+      "dotted_decimal_identifier": "34670418078277030.32962640335375710.65381446477251",
+      "cache_key": "php-8.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/php/versions/8.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/php/versions/8.1.0/download",
+        "version": "8.1.0"
+      }
+    },
+    "yum-epel": {
+      "version": "4.1.1",
+      "identifier": "0e78ccdfd029febc444c5df7ee228b29df337b49",
+      "dotted_decimal_identifier": "4073470997572094.52992390406336034.153011954613065",
+      "cache_key": "yum-epel-4.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/4.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/4.1.1/download",
+        "version": "4.1.1"
+      }
+    },
+    "yum-remi-chef": {
+      "version": "4.2.0",
+      "identifier": "411b1479003f38e1462d955a891dcad913234306",
+      "dotted_decimal_identifier": "18325648229547832.63409031353108765.223033677792006",
+      "cache_key": "yum-remi-chef-4.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-remi-chef/versions/4.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-remi-chef/versions/4.2.0/download",
+        "version": "4.2.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "exercises",
+        ">= 0.0.0"
+      ],
+      [
+        "ondrej_ppa_ubuntu",
+        "= 0.1.0"
+      ],
+      [
+        "php",
+        "= 8.1.0"
+      ],
+      [
+        "yum-epel",
+        "= 4.1.1"
+      ],
+      [
+        "yum-remi-chef",
+        "= 4.2.0"
+      ]
+    ],
+    "dependencies": {
+      "exercises (0.1.0)": [
+
+      ],
+      "ondrej_ppa_ubuntu (0.1.0)": [
+
+      ],
+      "php (8.1.0)": [
+        [
+          "yum-epel",
+          ">= 0.0.0"
+        ],
+        [
+          "yum-remi-chef",
+          ">= 0.0.0"
+        ],
+        [
+          "ondrej_ppa_ubuntu",
+          ">= 0.0.0"
+        ]
+      ],
+      "yum-epel (4.1.1)": [
+
+      ],
+      "yum-remi-chef (4.2.0)": [
+        [
+          "yum-epel",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}

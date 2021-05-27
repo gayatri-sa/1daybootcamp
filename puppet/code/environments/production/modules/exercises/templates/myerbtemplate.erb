@@ -1,0 +1,6 @@
+I am a class variable: <%= @classvariable %>
+I am a fact. The OS of this machine is <%= @osfamily %>
+I am a variable defined in Site.pp <%= @siteppvariable %>
+I am from the same module, different class declared, $var1 mandatory class param: <%= scope.lookupvar('exercises::withparams::var1') %>
+I am from the same module, different class declared, $var2 optional class param: <%= scope.lookupvar('exercises::withparams::var2') %>
+I am from another module, declared, class variable $otherclassavariable: <%= scope.lookupvar('forexercises::classa::otherclassavariable') %>

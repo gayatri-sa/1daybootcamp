@@ -1,0 +1,3 @@
+---
+forexercises::ex12_hiera::filecontent: 'I am from hiera in production common.yaml - filecontent'
+somevalue: 'Aha! You found me!'
